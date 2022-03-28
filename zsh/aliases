@@ -1,0 +1,4 @@
+alias open='xdg-open'
+alias cpuStat='mpstat -P ALL 1'
+alias hist='history | grep'
+alias v='nvim'
