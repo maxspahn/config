@@ -25,6 +25,7 @@ Plug 'morhetz/gruvbox'
 call plug#end()
 
 colorscheme gruvbox
+highlight Normal ctermbg=NONE
 
 nnoremap <leader>ev :vsplit $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<cr>
