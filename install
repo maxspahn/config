@@ -1,0 +1,10 @@
+#! /usr/bin/bash
+
+tmuxpath=$(realpath tmux)
+ln -fs $tmuxpath ~/.config/tmux
+
+zshpath=$(realpath zsh)
+ln -fs $zshpath ~/.config/zsh
+
+nvimpath=$(realpath nvim)
+ln -fs $nvimpath ~/.config/nvim

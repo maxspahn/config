@@ -93,3 +93,4 @@ bindkey "^[[B" history-substring-search-down
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export PATH="$HOME/.poetry/bin:$PATH"
+export TERM=xterm-256color
