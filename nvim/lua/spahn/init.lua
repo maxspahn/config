@@ -1,5 +1,0 @@
-require("spahn.mappings")
-require("spahn.plugins")
-require("spahn.lspconfig")
-require("spahn.gitsigns")
-require("spahn.luasnip")
