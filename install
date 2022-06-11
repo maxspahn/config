@@ -28,7 +28,7 @@ install_program () {
   program_name=$1
   install_function=$2
   while true; do
-    read -p "Do you wish to install $1?  " yn
+    read -p "Do you wish to install $1 (y/n)?  " yn
     case $yn in
         [Yy]* ) $install_function; break;;
         [Nn]* ) break;;
