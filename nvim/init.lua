@@ -1,6 +1,6 @@
 vim.g.mapleader = ","
 
-require("spahn")
+require("user")
 
 -- Indentation
 vim.opt.smartindent = true
