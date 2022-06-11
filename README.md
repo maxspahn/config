@@ -1,5 +1,6 @@
-# Neovim installation including Max's config files on Pop!_OS 20.04 LTS.
-There were some requirements and some changes needed to install the config files and nvim on a fresh system, these were the steps I followed for it to work.
+# Installation
+The initial installation of neovim with lsp support might look very complicated at first
+but when it works it is amazing! Let me know if you have any questions.
 
 ## 1. Install Neovim and create a symbolic link
 ### 1.1 Install Neovim
