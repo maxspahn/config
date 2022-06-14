@@ -3,6 +3,7 @@ local mapper = function(mode, key, result)
 end
 
 -- Essentials
+mapper("i", "<Space><Space>", "<Esc>")
 mapper("i", "<Leader>,", "<Esc>")
 mapper("n", "<Leader>ww", "<c-w>w")
 -- Buffer switching

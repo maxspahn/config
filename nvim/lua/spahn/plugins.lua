@@ -12,4 +12,5 @@ return require('packer').startup(function()
 	use "onsails/lspkind-nvim"
   use "lewis6991/gitsigns.nvim"
   use "vim-airline/vim-airline"
+  use "ray-x/lsp_signature.nvim"
 end)
