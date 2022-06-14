@@ -1,10 +1,43 @@
 #! /bin/bash
 
-tmuxpath=$(realpath tmux/tmux.conf)
-ln -fs $tmuxpath ~/.tmux.conf
+create_symbolic_link ()
+{
+  echo "Creating symbolic link in .config path."
+  config_path=$(realpath $1)
+  echo $config_path
+  #ln -fs $nvimpath ~/.config
+}
 
-zshpath=$(realpath zsh)
-#ln -fs $zshpath ~/.config
+install_tmux ()
+{
+  create_symbolic_link 'tmux'
+}
 
-nvimpath=$(realpath nvim)
-#ln -fs $nvimpath ~/.config
+install_neovim ()
+{
+  echo "Installing Neovim."
+  echo "Installing Packer package manager."
+  git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+  npm -g -i pyright
+  create_symbolic_link 'nvim'
+}
+
+
+install_program () {
+  program_name=$1
+  install_function=$2
+  while true; do
+    read -p "Do you wish to install $1 (y/n)?  " yn
+    case $yn in
+        [Yy]* ) $install_function; break;;
+        [Nn]* ) break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+  done
+}
+
+install_program "nvim" install_neovim
+install_program "tmux" install_tmux
+install_program "zsh" install_zsh
+
