@@ -6,6 +6,8 @@ end
 mapper("i", "<Space><Space>", "<Esc>")
 mapper("i", "<Leader>,", "<Esc>")
 mapper("n", "<Leader>ww", "<c-w>w")
+mapper("n", "<Leader>s", ":w<ENTER>")
+mapper("i", "<Leader>s", "<Esc>:w<ENTER>")
 -- Buffer switching
 mapper("n", "<Leader>n", ":bn <CR>")
 mapper("n", "<Leader>p", ":bp <CR>")
