@@ -23,6 +23,15 @@ install_neovim ()
   create_symbolic_link 'nvim'
 }
 
+install_zsh ()
+{
+  echo "Installing zsh."
+  zsh_path=$(realpath zsh/zshrc)
+  zsh_dir_path=$(realpath zsh)
+  ln -fs $zsh_path ~/.zshrc
+  ln -fs $zsh_dir_path ~/.config/zsh
+}
+
 
 install_program () {
   program_name=$1

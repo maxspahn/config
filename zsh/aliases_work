@@ -1,0 +1,48 @@
+# LOCAL ALIASES
+# Ros related
+alias ros='source /opt/ros/melodic/setup.zsh'
+alias ros3='source ~/ros3/devel/setup.zsh'
+alias rosmpc='source ~/ros_mpc/devel/setup.zsh'
+alias catws='source ~/catkin_ws/devel/setup.zsh;cd ~/catkin_ws'
+alias catcl='source ~/catkin_clean/devel/setup.zsh;cd ~/catkin_clean'
+alias catfab='source ~/catkin_fab/devel/setup.zsh;cd ~/catkin_fab'
+alias catreal='source ~/catkin_real/devel/setup.zsh;cd ~/catkin_real'
+alias catalbert='source ~/catkin_albert/devel/setup.zsh;cd ~/catkin_albert'
+alias cathack='ros;source ~/misc/hackathon_erf/hack_ws/devel/setup.zsh;roscd;cd ..'
+alias pandacl='source ~/catkin_panda/devel/setup.zsh;cd ~/catkin_panda'
+alias eager='source ~/catkin_eager/devel/setup.zsh;cd ~/catkin_eager/src/eager'
+alias tiago='source ~/catkin_tiago/devel/setup.zsh;cd ~/catkin_tiago'
+alias playros='source ~/ros_playground/devel/setup.zsh;cd ~/ros_playground'
+alias killgaz='killall -9 gzclient;killall -9 gzserver'
+alias killpython='killall -9 python'
+alias cbu='catkin build'
+alias connectnuc='export ROS_MASTER_URI=http://192.168.2.100:11311;export ROS_IP=192.168.2.118'
+alias connecttiago='export ROS_MASTER_URI=http://10.68.01:11311;export ROS_IP=10.68.01'
+alias connecthack='export ROS_MASTER_URI=http://192.168.0.100:11311;export ROS_IP=192.168.0.102'
+alias realRobot='catreal;connectnuc'
+alias tiagoReal='ssh pal@10.68.01'
+alias panda='ssh mspahn@192.168.2.100'
+alias pandaPlus='ssh -X pandanuc@192.168.2.100'
+alias boxer='ssh administrator@192.168.2.145'
+alias splineros='source ~/catkin_spline/devel/setup.zsh;cd ~/catkin_spline'
+alias openairos='source ~/catkin_openai/devel/setup.zsh;cd ~/catkin_openai'
+alias bulletros='source ~/catkin_bullet/devel/setup.zsh;cd ~/catkin_bullet'
+alias stopMotion="rostopic pub /motion_stop_request std_msgs/Bool 'data: false' -1"
+alias panda_tunnel="ssh -D 8080 -C -N pandanuc@192.168.2.100"
+alias open_gripper="rostopic pub -r 10 /gripper_online std_msgs/Float32 'data: 1.0'"
+alias close_gripper="rostopic pub -r 10 /gripper_online std_msgs/Float32 'data: 0.0'"
+
+alias lib='cd ~/phd/research/lib'
+alias gym='cd ~/phd/research/code/gym'
+alias code='cd ~/phd/research/code'
+alias fab='cd ~/phd/research/code/fabrics/'
+alias pandaHome='cat ~/Desktop/homePose.txt'
+alias fabvenv='cd ~/fabrics_venv;source env/bin/activate'
+alias bench='cd ~/phd/research/projects/fabrics_paper/experiments/plannerBenchmark'
+alias runner='../../../plannerbenchmark/exec/runner'
+alias bringHome='../../../plannerbenchmark/exec/runner --ros -c setup/home.yaml -p fabric setup/fabric.yaml --no-save'
+alias bringObst='../../generic/runner --ros -c setup/obst_home.yaml -p fabric setup/fabric.yaml --no-save'
+alias bringSpline='../../generic/runner --ros -c setup/spline_home.yaml -p fabric setup/fabric.yaml --no-save'
+alias playPython="cd ~/phd/research/code/playground_python"
+alias matlab='. /opt/MATLAB/R2020a/bin/matlab -sd /home/mspahn'
+alias phd='cd /home/mspahn/phd'
