@@ -82,6 +82,8 @@ set bell-style none
 # For a full list of active aliases, run `alias`.
 #
 source ~/.config/zsh/aliases
+source ~/.config/zsh/aliases_work
+source ~/.path_variables
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 

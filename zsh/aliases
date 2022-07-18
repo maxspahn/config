@@ -1,4 +1,11 @@
+# GENERAL ALIASES
+alias nv="nvim"
 alias open='xdg-open'
 alias cpuStat='mpstat -P ALL 1'
 alias hist='history | grep'
-alias v='nvim'
+alias config='cd /home/mspahn/develop/config'
+alias psh='poetry shell'
+alias p3='python3'
+alias ran='. ranger'
+alias latexproj='. ~/createTexProject'
+alias cuda='export PATH=/usr/local/cuda/bin:$PATH'
