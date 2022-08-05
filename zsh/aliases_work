@@ -22,7 +22,7 @@ alias connecthack='export ROS_MASTER_URI=http://192.168.0.100:11311;export ROS_I
 alias realRobot='catreal;connectnuc'
 alias tiagoReal='ssh pal@10.68.01'
 alias panda='ssh mspahn@192.168.2.100'
-alias pandaPlus='ssh -X pandanuc@192.168.2.100'
+alias pandaPlus='ssh -Y mspahn@192.168.2.100'
 alias boxer='ssh administrator@192.168.2.145'
 alias splineros='source ~/catkin_spline/devel/setup.zsh;cd ~/catkin_spline'
 alias openairos='source ~/catkin_openai/devel/setup.zsh;cd ~/catkin_openai'
