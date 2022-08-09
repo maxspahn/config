@@ -13,4 +13,5 @@ return require('packer').startup(function()
   use "lewis6991/gitsigns.nvim"
   use "vim-airline/vim-airline"
   use "ray-x/lsp_signature.nvim"
+  use "mfussenegger/nvim-lint"
 end)
