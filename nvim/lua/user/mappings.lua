@@ -19,3 +19,10 @@ mapper("n", "<Leader>f", ":Files<ENTER>")
 mapper("n", "<Leader>g", ":GFiles<ENTER>")
 mapper("n", "<Leader>t", ":Tags<ENTER>")
 
+-- parantheses
+mapper("i", '"', '""<left>' )
+mapper("i", "'", "''<left>" )
+mapper("i", "(", "()<left>" )
+mapper("i", "{", "{}<left>" )
+mapper("i", "[", "[]<left>" )
+
