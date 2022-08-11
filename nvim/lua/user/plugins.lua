@@ -14,4 +14,5 @@ return require('packer').startup(function()
   use "vim-airline/vim-airline"
   use "ray-x/lsp_signature.nvim"
   use "mfussenegger/nvim-lint"
+  use "svermeulen/vimpeccable"
 end)
